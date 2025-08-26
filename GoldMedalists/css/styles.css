@@ -1,0 +1,171 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Olympic&display=swap'); */
+@font-face {
+  font-family: 'Paris2024';
+  src: url('../fonts/Paris2024-Font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Tahoma', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Title Styling */
+#page-title {
+  font-family: 'Paris2024', sans-serif;
+  font-size: 36px;
+  color: #007bff; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Dropdown Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.dropdown label {
+  margin-right: 5px;
+}
+
+/* Layout Styling */
+#main-container {
+  display: flex;
+  gap: 20px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#world-map-container {
+  flex: 2; /* Take twice as much space */
+  max-width: 700px;
+  height: 550px;
+}
+
+#line-chart {
+  flex: 2; 
+  width: 650px;
+  height: 550px;
+}
+
+#bar-chart{
+    flex: 2; 
+    width: 650px;
+    height: 550px;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+#country-list {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#country-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#country-list li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#country-list li:hover {
+  background-color: #eaeaea;
+}
+
+#country-list li.selected {
+  background-color: #d52220;
+  color: white;
+}
+
+button {
+  padding: 8px 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  font-family: 'Paris2024', sans-serif;
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* Styling for the Video Container */
+#video-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#video-container iframe {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* General Layout Adjustments */
+body {
+  background-color: #f4f4f4; /* Light background for contrast */
+  color: #333;
+  line-height: 1.6;
+}
+
+#main-container {
+  flex-wrap: wrap; /* Make the layout responsive */
+  gap: 30px; /* Increased gap for clarity */
+}
+
+#country-list-container {
+  max-height: 600px; /* Restrict height for scroll */
+  overflow-y: auto;
+}
+
+#world-map-container {
+  margin-bottom: 20px;
+}
+
+/* Add spacing and alignment improvements */
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+/* Vis specific classes */
+#countries > .country.selected {
+  stroke-width: 2px;
+  stroke: black;
+  stroke-opacity: 1;
+}
+
+#countries > .country {
+  stroke-width: 1px;
+  stroke: black;
+  stroke-opacity: 0.1;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Olympic Medals Visualization</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- D3 and other libraries -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v4.js"></script>
+    <script src="https://d3js.org/topojson.v3.js"></script>
+
+    <!-- Chart and Script Files -->
+    <script src="js/line-chart.js"></script>
+    <script src="js/bar-chart.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <!-- Main Title for the Page -->
+    <h1 id="page-title">Olympic Medal Analysis (2008-2024)</h1>
+
+    <!-- Dropdowns for Selections -->
+    <div class="controls">
+      <div class="dropdown">
+        <label for="chartSelect">Chart Type:</label>
+        <select id="chartSelect">
+          <option value="line" selected>Line Chart</option>
+          <option value="bar">Bar Chart</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="medalSelect">Medal Type:</label>
+        <select id="medalSelect">
+          <option value="Total" selected>Total</option>
+          <option value="Gold">Gold</option>
+          <option value="Silver">Silver</option>
+          <option value="Bronze">Bronze</option>
+        </select>
+      </div>
+
+      <div class="dropdown">
+        <label for="yearSelect">Year:</label>
+        <select id="yearSelect">
+          <option value="Total" selected>Total</option>
+          <option value="2008">2008</option>
+          <option value="2012">2012</option>
+          <option value="2016">2016</option>
+          <option value="2020">2020</option>
+          <option value="2024">2024</option>
+        </select>
+      </div>
+
+      <!-- Button to Clear Selection -->
+      <button id="clear-button">Clear Selected Countries</button>
+    </div>
+
+    <!-- Main Layout -->
+    <div id="main-container">
+      <!-- Country List Section -->
+      <div id="country-list-container">
+        <h2>Participants</h2>
+        <div id="country-list"></div>
+      </div>
+
+      <!-- World Map Section -->
+      <div id="world-map-container">
+        <h2>World Map</h2>
+        <svg id="map">
+          <g id="graticules"></g>
+          <g id="countries"></g>
+          <g id="gradient"></g>
+        </svg>
+      </div>
+
+      <!-- Chart Section -->
+      <div id="chart-container">
+        <div id="line-chart-container">
+          <h2>Line Chart of Medal Trends</h2>
+          <svg id="line-chart">
+            <g id="x-axis"></g>
+            <g id="y-axis"></g>
+            <g id="lines"></g>
+            <g id="overlay"></g>
+          </svg>
+        </div>
+
+        <div id="bar-chart-container" style="display: none">
+          <h2>Bar Chart of Top Medal Countries</h2>
+          <svg id="bar-chart">
+            <g id="x-axis"></g>
+            <g id="y-axis"></g>
+            <g id="bars"></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-container">
+      <h2>Project Screen Cast</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ipyOBFtYHBk?si=kG2SpPjVZG7KAksR"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>

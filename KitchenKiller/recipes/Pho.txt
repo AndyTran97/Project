@@ -1,0 +1,166 @@
+{
+  "name": "Pho", 
+
+  "difficulty" : 3,
+
+  "recipeTags": ["GLUTENFREE"],
+
+  "country": "VIETNAM",
+
+  "description": "This is description.",
+
+  "learnMore": "This is learn more.",
+
+  "ingredients": {
+    "carrot": {
+      "amount": 2,
+      "category": "VEGETABLE",
+      "tags": [
+        "VEGAN"
+      ]
+    },
+     "broccoli": {
+      "amount": 2,
+      "category": "VEGETABLE",
+      "tags": [
+        "VEGAN"
+      ]
+    },
+     "cabbage": {
+      "amount": 2,
+      "category": "VEGETABLE",
+      "tags": [
+        "VEGAN"
+      ]
+    },
+    "chicken": {
+      "amount": 1,
+      "category": "MEAT",
+      "tags": [
+       
+      ]
+    },
+    "beef": {
+      "amount": 1,
+      "category": "MEAT",
+      "tags": [
+      ]
+  },
+    "riceNoodles": {
+      "amount": 1,
+      "category": "STAPLE",
+      "tags": [
+        "VEGAN"
+      ]
+    },
+   "soysauce": {
+      "amount": 2,
+      "category": "CONDIMENT",
+      "tags": [
+        "VEGAN"
+      ]
+    }
+},
+
+  "prepSteps": [
+    {
+      "order": 1,
+      "ingredientName": "carrot",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":false, 
+      "isFried": false
+    },
+    {
+      "order": 2,
+      "ingredientName": "cabbage",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":false, 
+      "isFried": false
+    },
+     {
+      "order": 3,
+      "ingredientName": "broccoli",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":false, 
+      "isFried": false
+    },
+     {
+      "order": 4,
+      "ingredientName": "chicken",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":false, 
+      "isFried": false
+    },
+     {
+      "order": 5,
+      "ingredientName": "beef",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":false, 
+      "isFried": false
+    }
+  ],
+  "cookingSteps": [
+    {
+      "order": 1,
+      "ingredientName": "beef",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":true, 
+      "isFried": false
+    },
+    {
+      "order": 2,
+      "ingredientName": "chicken",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":true, 
+      "isFried": false
+    },
+    {
+      "order": 3,
+      "ingredientName": "carrot",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":true, 
+      "isFried": false
+    },
+    {
+      "order": 4,
+      "ingredientName": "broccoli",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":true, 
+      "isFried": false
+    },
+    {
+      "order": 5,
+      "ingredientName": "cabbage",
+      "isCut": true,
+      "isMixed":false, 
+      "isBoiled":true, 
+      "isFried": false
+    },
+    {
+      "order": 6,
+      "ingredientName": "riceNoodles",
+      "isCut": false,
+      "isMixed":false, 
+      "isBoiled":true, 
+      "isFried": false
+    },
+    {
+      "order": 7,
+      "ingredientName": "soysauce",
+      "isCut": false,
+      "isMixed":false, 
+      "isBoiled":true, 
+      "isFried": false
+    }
+
+  ]
+}

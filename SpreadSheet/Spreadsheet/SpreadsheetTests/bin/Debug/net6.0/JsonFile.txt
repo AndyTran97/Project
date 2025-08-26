@@ -1,0 +1,11 @@
+{
+                  "cells": {
+                     "A1": {
+                       "stringForm": "ABC"
+                     },
+                    "B1": { 
+                           "stringForm": "=_1+5" //invalid Formula
+                     }
+                   },
+                   "Version": "default"
+            }

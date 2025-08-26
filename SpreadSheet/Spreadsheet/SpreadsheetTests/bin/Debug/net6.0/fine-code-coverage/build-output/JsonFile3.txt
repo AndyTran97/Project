@@ -1,0 +1,11 @@
+{
+                  "cells": {
+                     "A1": {
+                       "stringForm": "ABC"
+                     },
+                    "B3": {
+                           "stringForm": "=A1+5"
+                     }
+                   },
+                   "Version": "default"
+            }

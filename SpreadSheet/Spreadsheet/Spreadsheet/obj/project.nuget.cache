@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eCqWfX7F/KOrKsmQuItGbPYkZcDVTCYJyumwUcclPR27yqTfylRXU2lUm9kMsRqlccPvIazy8CE5LcZ06S3eXg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andy Tran\\source\\repos\\spreadsheet-AndyTran97\\Spreadsheet\\Spreadsheet\\Spreadsheet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andy Tran\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

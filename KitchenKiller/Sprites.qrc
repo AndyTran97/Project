@@ -1,0 +1,57 @@
+<RCC>
+    <qresource prefix="/sprites">
+        <file>icons/Beef.png</file>
+        <file>icons/Broccoli.png</file>
+        <file>icons/Chicken.png</file>
+        <file>icons/Peanut.png</file>
+        <file>icons/Pork.png</file>
+        <file>icons/Tomato.png</file>
+        <file>icons/Carrot.png</file>
+        <file>icons/Cabbage.png</file>
+        <file>icons/RiceNoodles.png</file>
+        <file>icons/SoySauce.png</file>
+        <file>icons/Salt.png</file>
+        <file>icons/Kitchen.PNG</file>
+        <file>recipes/Pho.txt</file>
+        <file>icons/Wok.PNG</file>
+        <file>icons/FryPan.png</file>
+        <file>icons/Title.png</file>
+        <file>icons/pho.png</file>
+        <file>icons/funny.gif</file>
+        <file>icons/about.png</file>
+        <file>icons/start.png</file>
+        <file>icons/pantry.png</file>
+        <file>icons/paper.png</file>
+        <file>icons/cutboard.png</file>
+        <file>icons/pot.png</file>
+        <file>icons/Garlic.png</file>
+        <file>icons/Oil.png</file>
+        <file>icons/Garlic_piece.png</file>
+        <file>icons/Tomato_piece.png</file>
+        <file>icons/Beef_piece.png</file>
+        <file>icons/Cabbage_piece.png</file>
+        <file>icons/window.png</file>
+        <file>icons/ChiliYum.png</file>
+        <file>icons/Pepper.png</file>
+        <file>icons/sizzling.wav</file>
+        <file>icons/boiling.wav</file>
+        <file>icons/chopping.wav</file>
+        <file>icons/bun bo hue.png</file>
+        <file>icons/chao mian.png</file>
+        <file>icons/kuyteav.png</file>
+        <file>icons/yang chun.png</file>
+        <file>icons/s4Music.wav</file>
+        <file>icons/s0Music.wav</file>
+        <file>icons/s3Music.wav</file>
+        <file>icons/Chicken_piece.png</file>
+        <file>icons/Carrot_piece.png</file>
+        <file>icons/Broccoli_piece.png</file>
+        <file>icons/Shrimp.png</file>
+        <file>icons/Ginger.png</file>
+        <file>icons/GreenOnion.png</file>
+        <file>icons/Ginger_piece.png</file>
+        <file>icons/GreenOnion_piece.png</file>
+        <file>icons/Shrimp_piece.png</file>
+        <file>icons/Pork_piece.png</file>
+    </qresource>
+</RCC>

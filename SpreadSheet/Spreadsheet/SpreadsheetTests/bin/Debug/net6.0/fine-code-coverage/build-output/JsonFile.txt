@@ -1,0 +1,18 @@
+{
+                  "cells": {
+                     "a1": {
+                       "stringForm": "50"
+                     },
+                    "b1": {
+                           "stringForm": "=A1+5"
+                    },
+                    "c1": {
+                           "stringForm": "=B1+A1+5"
+                    },
+                    "d1": {
+                           "stringForm": "=B1+C1"
+                    }
+                    
+                   },
+                   "Version": "default"
+            }

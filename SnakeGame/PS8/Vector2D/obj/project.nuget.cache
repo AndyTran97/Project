@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "q1R+GhBXR7282OTgTIX1/jYS8y0zr3dggmhTIuJRKu9EQ4u6ooV5LMNNoklBEcMBeV8lE9LgSdsPg5A15cfjKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andy Tran\\OneDrive\\UoU\\CS Courses\\CS 3500\\game-bugshooters_game\\PS8\\Vector2D\\Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andy Tran\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

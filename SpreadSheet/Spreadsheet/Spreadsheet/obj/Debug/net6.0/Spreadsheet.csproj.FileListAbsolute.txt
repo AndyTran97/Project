@@ -1,0 +1,17 @@
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\bin\Debug\net6.0\Spreadsheet.deps.json
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\bin\Debug\net6.0\Spreadsheet.dll
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\bin\Debug\net6.0\Spreadsheet.pdb
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\bin\Debug\net6.0\DependencyGraph.dll
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\bin\Debug\net6.0\Formula.dll
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\bin\Debug\net6.0\DependencyGraph.pdb
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\bin\Debug\net6.0\Formula.pdb
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\Spreadsheet.csproj.AssemblyReference.cache
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\Spreadsheet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\Spreadsheet.AssemblyInfoInputs.cache
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\Spreadsheet.AssemblyInfo.cs
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\Spreadsheet.csproj.CoreCompileInputs.cache
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\Spreadsheet.csproj.CopyComplete
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\Spreadsheet.dll
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\refint\Spreadsheet.dll
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\Spreadsheet.pdb
+C:\Users\Andy Tran\source\repos\spreadsheet-AndyTran97\Spreadsheet\Spreadsheet\obj\Debug\net6.0\ref\Spreadsheet.dll

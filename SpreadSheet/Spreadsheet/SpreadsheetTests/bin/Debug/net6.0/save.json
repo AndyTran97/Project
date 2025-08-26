@@ -1,0 +1,1 @@
+{"cells":{"A1":{"stringForm":"50"},"B1":{"stringForm":"=A1+5"},"C1":{"stringForm":"=B1+A1+5"},"D1":{"stringForm":"String"},"E1":{"stringForm":"=D1+C1"}},"Version":"2.0"}
