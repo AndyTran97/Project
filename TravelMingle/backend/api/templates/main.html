@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+    <style>
+      .post-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .comment-input button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="post-container">
+      <!-- Post Header -->
+      <div class="post-header">
+        <img
+          src="{{ MEDIA_URL }}profiles/user1.png"
+          alt="Author Avatar"
+          class="post-avatar"
+        />
+        <span class="post-author">John Doe</span>
+      </div>
+
+      <!-- Post Title -->
+      <h2 class="post-title">Exploring the Mountains</h2>
+
+      <!-- Post Content -->
+      <div class="post-content">
+        Today, I went on a hike to explore the beautiful mountains nearby. It
+        was an amazing experience with breathtaking views!
+      </div>
+
+      <!-- Post Image -->
+      <img
+        src="{{ MEDIA_URL }}postImages/post1_1.png"
+        alt="Post Image"
+        class="post-image"
+      />
+
+      <!-- Comment Section -->
+      <div class="comment-section">
+        <h3>Comments</h3>
+
+        <!-- Existing Comments -->
+        <div class="comment">
+          <span class="comment-author">Alice:</span> Wow, that looks amazing!
+        </div>
+        <div class="comment">
+          <span class="comment-author">Bob:</span> I wish I could be there!
+        </div>
+
+        <!-- Comment Input -->
+        <div class="comment-input">
+          <input type="text" placeholder="Add a comment..." />
+          <button type="button">Post</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

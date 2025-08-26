@@ -1,0 +1,92 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace = "com.travelmingle.demo" // Need to match the name in google-services
+    compileSdk = 34  // Changed from 35 to 34
+    ndkVersion = "27.0.12077973"
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId = "com.travelmingle.demo" // Need to match the name in google-services
+        minSdkVersion 26
+        targetSdk = 34  // Changed from 35 to 34
+        targetSdkVersion = 34  // Changed from 35 to 34
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            def keystorePropertiesFile = rootProject.file("key.properties")
+            if (project.hasProperty('KEYSTORE_PASSWORD')) {
+                keyAlias System.getenv("KEY_ALIAS")
+                keyPassword System.getenv("KEY_PASSWORD")
+                storeFile file(System.getenv("KEYSTORE_FILE"))
+                storePassword System.getenv("KEYSTORE_PASSWORD")
+            } else if (keystorePropertiesFile.exists()) {
+                def keystoreProperties = new Properties()
+                keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            } else {
+                // No signing config available - skip for debug build
+                println "No keystore found. Skipping release signing config."
+            }
+        }
+    }
+
+
+    buildTypes {
+        release {
+        if (project.hasProperty('KEYSTORE_PASSWORD') || rootProject.file("key.properties").exists()) {
+            signingConfig signingConfigs.release
+        }
+        minifyEnabled false
+        shrinkResources false
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lint {
+        baseline = file("../lint-baseline.xml")
+        checkReleaseBuilds = true
+        checkAllWarnings = true
+        warningsAsErrors = true
+        abortOnError = true
+        disable 'InvalidPackage'
+        disable 'GradleDependency'
+    }
+}
+
+
+dependencies {
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
+    
+    // Use the BOM to manage Firebase dependency versions
+    implementation platform('com.google.firebase:firebase-bom:32.7.2')
+    
+    // When using the BOM, you don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    
+    // Add multidex support
+    implementation 'androidx.multidex:multidex:2.0.1'
+}
