@@ -1,0 +1,210 @@
+
+/* Phase 2: Typography*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+html, body{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.25;
+}
+
+code{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+table tr{
+    line-height: 1.5;   
+}
+
+#bold-title{
+    font-weight: bold;
+    color: black;
+}
+
+.title{
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+form label, form input, nav menu a{
+    font-size: 125%;
+}
+
+/* Phase 3: Borders, backgrounds, and whitespace*/
+nav{
+    background-color: #ddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);  
+}
+
+menu a {
+    color: rgba(0, 0, 0, 0.7); 
+    font-weight: normal;
+    text-decoration: none; 
+}
+
+.action-card{
+    background-color: #b1c3de;
+    border: 3px solid #204a87;
+    margin: 1rem 0rem;
+    padding: 0 1rem;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description, p, ul{
+    margin: 1rem 0rem;
+}
+
+.subtitle{
+    margin-bottom: 2rem;
+}
+
+table{
+    text-align: left;
+    margin: 1rem 0rem;
+}
+
+/* Phase 4 and 5: Styling Links, Forms, Tables, Layout */
+nav a:hover{
+    text-decoration: underline; 
+}
+
+nav a:active{
+    color: black; 
+}
+
+.text-right-align{
+    text-align: right;
+}
+
+.main-content{
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-row label {
+    margin-right: 1rem;
+}
+
+.text-entry {
+    width: 50%;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    width: 35%;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+
+.submission-table th, .submission-table td{
+    padding-right: 3rem;
+}
+
+.submissions-button{
+    display: flex;
+    justify-content: start;
+    gap: 1rem; 
+}
+
+.default-width{
+    width: initial;
+}
+
+.gap-between{
+    display: flex;
+    justify-content: start;
+    gap: 1rem; 
+}
+
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+nav menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main{
+    max-width: 50rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.error-message{
+    color: red;
+}
+
+.submission-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.submission-form input[type="file"] {
+    padding: 0.5rem;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.succeeded-form{
+    padding: 0.5rem;
+}
+
+.responsive-button{
+    background-color: #d3d3d3;
+}
+
+.responsive-button:hover{
+    background-color: #bcbcbc;
+}
+
+.button{
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.25rem;
+}
+
+th.sortable { cursor: pointer; }
+th.sort-asc::after { content: " \25b2" } /* Up arrow for ascending sort */
+th.sort-desc::after { content: " \25bc" } /* Down arrow for descending sort */
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+    {% include 'header.html' with title="Login" %}
+    <main>
+        <section>
+            <h2 class="title">Log in</h2>
+            <div class="main-content">
+                {% if error %}
+                <output class="error-message">{{ error }}</output>
+                {% endif %}
+
+                <form action="/profile/login/" method="post">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" class="text-entry" required autofocus>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" class="text-entry" required>
+                    </div>
+                    <input type="hidden" name="next" value="{{ next }}">
+                    <div class="button-row">
+                        <button type="submit" class="submit-button responsive-button">Login</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>

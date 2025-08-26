@@ -1,0 +1,24 @@
+    <script type="module" src="/static/main.js"></script>
+    {% include 'header.html' with title="Assignment" %}
+    <main>
+        <section>
+            <h2 class="title">All assignments</h2>
+            <table class="main-content">
+                <thead>
+                    <th>Assignment</th>
+                    <th class="sortable">Due date</th>
+                    <th class="sortable text-right-align">Weight</th>
+                </thead>
+                <tbody>
+                    {% for assignment in assignments %}
+                        <tr data-index="{{ forloop.counter }}">
+                            <td><a href="/{{ assignment.id }}/">{{ assignment.title }}</a></td>
+                            <td data-value="{{ assignment.deadline|date:'U' }}">{{ assignment.deadline|date:"M d"}}</td>
+                            <td class="text-right-align">{{ assignment.weight|default:"0" }}</td>
+                        </tr>
+                    {% endfor %}    
+                </tbody>
+            </table>
+
+        </section>
+    </main>

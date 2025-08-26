@@ -1,0 +1,43 @@
+
+    <script type="module" src="/static/main.js"></script>     
+    {% include 'header.html' with title=title %}
+    <main>
+        <section> 
+            <h1 class="title">{{ assignment.title|safe }}</h1>
+            <div class="subtitle">
+                Due {{ assignment.deadline|date:"F d" }}, total of {{ assignment.weight }} point{{ assignment.weight|pluralize }}
+            </div>           
+        </section>
+        <section>
+            <div class="action-card">
+                <!-- TA or Admin view-->
+                {% if user.is_authenticated and is_ta_or_admin%}
+                    <p>Currently {{ total_submissions }}/{{ total_students }} submission{{ total_students|pluralize }}</p>
+                    <p class="space-between">
+                        {{ ta_submissions }} submission{{ ta_submissions|pluralize }} assigned to you
+                        {% if isDue %} 
+                            <a href="{% url 'submissions' assignment.id %}" title="Submissions page">Grade</a>
+                        {% endif %}
+                    </p>
+                {% endif %}
+
+                <!-- Student view-->
+                {% if user.is_authenticated and is_student %}
+                    <p>{{ submission_info|safe }}</p>
+                    {% if not isDue %}
+                        <form class="submission-form" action="/{{ assignment.id }}/submit/" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <input type="file" name="file">
+                            <button type="submit" class="responsive-button button">Submit</button>
+                        </form>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </section>
+
+        <section>
+            <strong class="description">Description</strong>
+            {{ description | safe}}
+        </section>
+
+    </main>
