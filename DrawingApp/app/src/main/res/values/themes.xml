@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Dragon_descendants" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnPrimary">@color/primaryOnColor</item>
+        <item name="colorOnSecondary">@color/secondaryOnColor</item>
+        <item name="colorOnSurface">@color/surfaceOnColor</item>
+
+    </style>
+
+    <style name="Theme.Dragon_descendants" parent="Base.Theme.Dragon_descendants" />
+
+    <style name="Theme.Dragon_descendants.Login" parent="Base.Theme.Dragon_descendants">
+
+    </style>
+
+    <style name="SplashScreen.Dragon_descendants" parent ="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/dd_logo_1</item>
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimationDuration" >1000</item>
+    </style>
+</resources>

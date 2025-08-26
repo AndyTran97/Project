@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/drawingListFragment2">
+
+    <fragment
+        android:id="@+id/drawingListFragment2"
+        android:name="com.example.dragon_descendants.DrawingListFragment"
+        android:label="fragment_drawing_list"
+        tools:layout="@layout/fragment_drawing_list" >
+        <action
+            android:id="@+id/action_drawingListFragment2_to_drawPanelFragment2"
+            app:destination="@id/drawPanelFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/drawPanelFragment2"
+        android:name="com.example.dragon_descendants.DrawPanelFragment"
+        android:label="fragment_draw_panel"
+        tools:layout="@layout/fragment_draw_panel" >
+        <action
+            android:id="@+id/action_drawPanelFragment2_to_drawingListFragment2"
+            app:destination="@id/drawingListFragment2" />
+    </fragment>
+</navigation>

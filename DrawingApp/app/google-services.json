@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "408561654073",
+    "project_id": "dragon-descendants-drawing-app",
+    "storage_bucket": "dragon-descendants-drawing-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408561654073:android:f9078d9b42cfd9a33a30e8",
+        "android_client_info": {
+          "package_name": "com.example.dragon_descendants"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlE2WTeLfc7nKf50eUCgV2Vo16IjcDpY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
